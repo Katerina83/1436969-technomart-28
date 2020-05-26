@@ -59,7 +59,7 @@
   </nav>
 </header>
 <main>
-  <h1>Перфораторы</h1>
+  <h2>Перфораторы</h2>
   <ul>
     <li>
       <a href="catalog.html">Каталог</a>
@@ -71,8 +71,57 @@
   </ul>
   <section>
     <h2>Фильтр товаров</h2>
-    <!-- тут будет фильтр товаров -->
+    <!-- тут будет фильтр с бегунком -->
   </section>
+  <section>
+    <h2 class="vissually-hidden">Фильтр по производителям и типу питания</h2>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Производители:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="bosch" id="filtr-bosch" checked>
+            <label for="filtr-bosch">BOSH</label>
+          </li>
+          <li>
+            <input type="checkbox" name="interskol" id="filtr-interskol">
+            <label for="filtr-interskol">ИНТЕРСКОЛ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="makita" id="filtr-makita" checked>
+            <label for="filtr-makita">MAKITA</label>
+          </li>
+          <li>
+            <input type="checkbox" name="dewalt" id="filtr-dewalt">
+            <label for="filtr-dewalt">DEWALT</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hitachi" id="filtr-hitachi">
+            <label for="filtr-hitachi">HITACHI</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Питание:</legend>
+        <ul>
+          <li>
+            <input type="radio" name="supply" value="rechargeable" id="filtr-rechargeable" checked>
+            <label for="filtr-rechargeable">АККУМУЛЯТОРНЫЕ</label>
+          </li>
+          <li>
+            <input type="radio" name="supply" value="network" id="filtr-network">
+            <label for="filtr-network">СЕТЕВЫЕ</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+  </section>
+  <div>
+    <p>Товар добавлен в корзину</p><br>
+    <button type="submit">Оформить заказ</button>
+    <button type="submit">Продолжить покупки</button>
+  </div>
   <section>
     <h2>Список перфораторов</h2>
     <ul>
@@ -204,35 +253,6 @@
                 </li>
               </ul>
               <button type="button">Следующая</button>
-            </section>
-            <section>
-              <h2>ПРОИЗВОДИТЕЛИ:</h2>
-              <ul>
-                <li>Bosch
-                  <button type="button"></button>
-                </li>
-                <li>Интерскол
-                  <button type="button"></button>
-                </li>
-                <li>Makita
-                  <button type="button"></button>
-                </li>
-                <li>Dewalt
-                  <button type="button"></button>
-                </li><li>Hitachi
-                  <button type="button"></button>
-                </li>
-              </ul>
-              <h2>ПИТАНИЕ:</h2>
-              <ul>
-                <li>Аккумуляторные
-                  <button type="button"></button>
-                </li>
-                <li>Сетевые
-                  <button type="button"></button>
-                </li>
-              </ul>
-              <button type="button">Показать</button>
             </section>
             <section>
               <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
