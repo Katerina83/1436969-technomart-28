@@ -70,8 +70,20 @@
     <li>Перфораторы</li>
   </ul>
   <section>
-    <h2>Фильтр товаров</h2>
-    <!-- тут будет фильтр с бегунком -->
+    <h2 class="vissually-hidden">Фильтр товаров</h2>
+    <ul>
+      <li>ФИЛЬТР:</li>
+      <li>СОРТИРОВКА</li>
+      <li>ПО ЦЕНЕ:</li>
+      <li>ПО ТИПУ:</li>
+      <li>ПО ФУНКЦИОНАЛУ:</li>
+    </ul>
+    <label for="price">ЦЕНА:</label><br>
+    <input type="range" id="price" name="price" min="0" max="300" step="1">
+    <h3 class="vissually-hidden">Минималья/максимальная цены</h3>
+    <input type="number" min="0" max="300" name="number" value="0">
+    <p>&#8212;</p>
+    <input type="number" min="0" max="300" name="number" value="300">
   </section>
   <section>
     <h2 class="vissually-hidden">Фильтр по производителям и типу питания</h2>
