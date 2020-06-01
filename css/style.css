@@ -59,7 +59,7 @@ img {
 }
 
 .main-navigation {
-  font-family: Cuprum;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -94,7 +94,7 @@ img {
 }
 
 .main-navigation-wrapper {
-  font-family: Cuprum;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-style: normal;
   color: var(--basic-white);
   background-color: var(--basic-extra-dark);
@@ -106,6 +106,7 @@ img {
 
 .list-navigation {
   list-style: none;
+  padding: 0;
 }
 
 .site-navigation h2 {
@@ -155,7 +156,7 @@ img {
 }
 
 .text h2 {
-  font-family: Cuprum;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -163,30 +164,31 @@ img {
 }
 
 .text p {
-  font-family: PT Sans;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
 }
 
 .text li {
-  font-family: Cuprum;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-black);
 }
 
 .text button {
-  font-family: Cuprum;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  border: 1px solid transparent;
 }
 /* подвал */
 .main-footer {
-  font-family: Cuprum;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -204,7 +206,7 @@ img {
 }
 
 .footer-social {
-  font-family: Cuprum;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -224,7 +226,7 @@ img {
 
 .breadcrumbs a {
   color: var(--basic-black);
-  font-family: PT Sans;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -237,14 +239,14 @@ img {
 
 .title h2 {
   text-transform: uppercase;
-  font-family: Cuprum;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-extra-dark);
 }
 
 .filter legend {
-  font-family: PT Sans;
+  font-family: "PT Sans Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
