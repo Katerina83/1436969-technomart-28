@@ -116,9 +116,9 @@
         <ul>
           <li>ФИЛЬТР:</li>
           <li>СОРТИРОВКА</li>
-          <li>ПО ЦЕНЕ:</li>
-          <li>ПО ТИПУ:</li>
-          <li>ПО ФУНКЦИОНАЛУ:</li>
+          <li class="filter-price">ПО ЦЕНЕ:</li>
+          <li class="filter-type">ПО ТИПУ:</li>
+          <li сclass="filter-type">ПО ФУНКЦИОНАЛУ:</li>
         </ul>
         <label for="price">ЦЕНА:</label><br>
         <input type="range" id="price" name="price" min="0" max="300" step="1">
@@ -128,7 +128,7 @@
         <input type="number" min="0" max="300" name="number" value="300">
       </section>
       </div>
-      <section>
+      <section class="filter-manufacturers">
         <h2 class="visually-hidden">Фильтр по производителям и типу питания</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
@@ -181,8 +181,8 @@
         </section>
       </div>
       <div>
-        <section>
-          <h2>Список перфораторов</h2>
+        <section class="catalog">
+          <h2 class="visually-hidden">Список перфораторов</h2>
           <ul>
             <li>
               <a href="blank.html">
@@ -192,10 +192,10 @@
                   <img src="img/bosch-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </p>
               </a>
-              <p>
+              <p class="old-price">
                 <del>30500 &#8381;</del>
               </p>
-              <p>25500 &#8381;</p>
+              <p class="new-price">25500 &#8381;</p>
             </li>
             <li>
               <a href="blank.html">
@@ -205,7 +205,7 @@
                     <img src="img/bosch-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                   </p>
                 </a>
-                <p>25500 &#8381;</p>
+                <p class="new-price">25500 &#8381;</p>
               </li>
               <li>
                 <a href="blank.html">
@@ -216,10 +216,10 @@
                   <p>
                     <img src="img/bosch-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                   </p>
-                  <p>
+                  <p class="old-price">
                     <del>30500 &#8381;</del>
                   </p>
-                  <p>25500 &#8381;</p>
+                  <p class="new-price">25500 &#8381;</p>
                   <button type="button">Купить</button>
                   <button type="button">В закладки</button>
                 </li>
@@ -232,10 +232,10 @@
                     <p>
                       <img src="img/bosch-3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
                     </p>
-                    <p>
+                    <p class="old-price">
                       <del>22500 &#8381;</del>
                     </p>
-                    <p>15500 &#8381;</p>
+                    <p class="new-price">15500 &#8381;</p>
                   </li>
                   <li>
                     <a href="blank.html">
@@ -245,10 +245,10 @@
                           <img src="img/bosch-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                         </p>
                       </a>
-                      <p>
+                      <p class="old-price">
                         <del>30500 &#8381;</del>
                       </p>
-                      <p>25500 &#8381;</p>
+                      <p class="new-price">25500 &#8381;</p>
                     </li>
                     <li>
                       <a href="blank.html">
@@ -259,7 +259,7 @@
                         <p>
                           <img src="img/bosch-2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
                         </p>
-                        <p>12500 &#8381;</p>
+                        <p class="new-price">12500 &#8381;</p>
                       </li>
                       <li>
                         <a href="blank.html">
@@ -270,10 +270,10 @@
                           <p>
                             <img src="img/bosch-3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
                           </p>
-                          <p>
+                          <p class="old-price">
                             <del>22500 &#8381;</del>
                           </p>
-                          <p>15500 &#8381;</p>
+                          <p class="new-price">15500 &#8381;</p>
                         </li>
                         <li>
                           <a href="blank.html">
@@ -283,10 +283,10 @@
                                 <img src="img/bosch-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                               </p>
                             </a>
-                            <p>
+                            <p class="old-price">
                               <del>30500 &#8381;</del>
                             </p>
-                            <p>25500 &#8381;</p>
+                            <p class="new-price">25500 &#8381;</p>
                           </li>
                           <li>
                             <a href="blank.html">
@@ -297,7 +297,7 @@
                               <p>
                                 <img src="img/bosch-2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
                               </p>
-                              <p>12500 &#8381;</p>
+                              <p class="new-price">12500 &#8381;</p>
                             </li>
                           </ul>
                         </section>
