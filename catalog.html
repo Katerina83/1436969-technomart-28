@@ -8,39 +8,39 @@
   <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-<header>
-  <nav class="main-navigation">
-    <div class="main-navigation-wrapper">
-      <a class="main-logo">
-        <img src="img/logo-technomart.svg" width="107" height="17" alt="логотип Техномарта">
-      </a>
-      <button type="button">Поиск</button>
-      <img src="img/icon-search.svg" width="17" height="17" alt="иконка поиска">
-      <ul class="user-info">
-        <li>
-          <a href="blank.html">Закладки</a>
-          <img src="img/icon-bookmark.svg" width="14" height="16" alt="иконка закладки">
-        </li>
-        <li>
-          <a href="blank.html">Корзина</a>
-          <img src="img/icon-cart.svg" width="15" height="15" alt="иконка корзины">
-        </li>
-        <li>
-          <a href="blank.html" class="checkout">Оформить заказ</a>
-        </li>
-      </ul>
-    </div>
-    <div class="site-navigation">
-      <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
-      <h2>Интернет-магазин<br>
-        строительных материалов<br>и инструментов для ремонта</h2>
-        <img src="img/icon-phone.svg" width="18" height="19" alt="иконка телефона">
-        <p class="phone">+7 (812) 555-05-55</p>
-        <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+    <header>
+      <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <a class="main-logo">
+            <img src="img/logo-technomart.svg" width="107" height="17" alt="логотип Техномарта">
+          </a>
+          <button type="button" class="main-button">Поиск</button>
+          <img src="img/icon-search.svg" width="17" height="17" alt="иконка поиска">
+          <ul class="user-info">
+            <li>
+              <a href="blank.html" class="main-link">Закладки</a>
+              <img src="img/icon-bookmark.svg" width="14" height="16" alt="иконка закладки">
+            </li>
+            <li>
+              <a href="blank.html" class="main-link">Корзина</a>
+              <img src="img/icon-cart.svg" width="15" height="15" alt="иконка корзины">
+            </li>
+            <li>
+              <a href="blank.html" class="checkout main-link">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-navigation">
+          <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
+          <h2>Интернет-магазин<br>
+            строительных материалов<br>и инструментов для ремонта</h2>
+            <img src="img/icon-phone.svg" width="18" height="19" alt="иконка телефона">
+            <p class="phone">+7 (812) 555-05-55</p>
+            <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
         <a href="blank.html">Личный кабинет</a>
         <img src="img/icon-user.svg" width="20" height="18" alt="иконка пользователя">
         <img src="img/icon-logout.svg" width="20" height="17" alt="иконка выхода из личного кабинета">
-        <input type="text" placeholder="Равшан Джамшутович">
+        <input class="user-name" type="text" placeholder="Равшан Джамшутович">
         <a href="blank.html">Мои заказы</a>
         <div class="main-navigation-wrapper">
         <ul class="list-navigation">
@@ -118,7 +118,7 @@
           <li>СОРТИРОВКА</li>
           <li class="filter-price">ПО ЦЕНЕ:</li>
           <li class="filter-type">ПО ТИПУ:</li>
-          <li сclass="filter-type">ПО ФУНКЦИОНАЛУ:</li>
+          <li class="filter-type">ПО ФУНКЦИОНАЛУ:</li>
         </ul>
         <label for="price">ЦЕНА:</label><br>
         <input type="range" id="price" name="price" min="0" max="300" step="1">
@@ -305,14 +305,14 @@
                       <div>
                         <section>
                           <h2 class="visually-hidden">Переход на следующие страницы</h2>
-                          <ul>
-                            <li>
+                          <ul class="pagination-list">
+                            <li class="pagination-item">
                               <a href="#">1</a>
                             </li>
-                            <li>
+                            <li class="pagination-item">
                               <a href="#">2</a>
                             </li>
-                            <li>
+                            <li class="pagination-item">
                               <a href="#">3</a>
                             </li>
                           </ul>
@@ -320,7 +320,7 @@
                         </section>
                       </div>
                       <div>
-                        <section>
+                        <section class="text-hammer-drill">
                            <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
                              <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                               Существуют электрические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
@@ -330,8 +330,8 @@
                       </div>
                     </main>
                     <footer>
-                      <section>
-                        <h2 class="vissually-hidden">Подвальное описание</h2>
+                      <section class="main-footer">
+                        <h2 class="visually-hidden">Подвальное описание</h2>
                         <a class="main-logo">
                           <img src="img/logo-technomart.svg" width="220" height="47" alt="логотип Техномарта">
                         </a>
@@ -355,16 +355,16 @@
                             <a href="blank.html">Контакты</a>
                           </li>
                           <li>
-                            <a href="blank.html" class="footer-link">Материалы</a>
+                            <a class="link-yellow" href="blank.html">Материалы</a>
                           </li>
                           <li>
-                            <a href="blank.html" class="footer-link">Техника</a>
+                            <a class="link-yellow" href="blank.html">Техника</a>
                           </li>
                           <li>
-                            <a href="blank.html" class="footer-link">Инструмент</a>
+                            <a class="link-yellow" href="blank.html">Инструмент</a>
                           </li>
                           <li>
-                            <a href="blank.html" class="footer-link">Спецпредложения</a>
+                            <a class="link-yellow" href="blank.html">Спецпредложения</a>
                           </li>
                         </ul>
                       </section>
@@ -388,10 +388,10 @@
                           </li>
                         </ul>
                         <p>Обратная связь:<br>
-                          <a class="footer-link" href="blank.html">mail@htmlacadamy.ru</a>
+                          <a class="link-yellow" href="blank.html">mail@htmlacadamy.ru</a>
                         </p>
                         <p>Разработано:
-                          <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML htmlacademy</a>
+                          <a class="link-yellow" href="https://htmlacademy.ru/intensive/htmlcss">HTML htmlacademy</a>
                         </p>
                         </section>
                       </footer>
