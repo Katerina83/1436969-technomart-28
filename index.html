@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Cuprum:400,700&amp;subset=latin,cyrillic">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   </head>
@@ -26,11 +26,11 @@
               <div class="container">
                 <a class="header-link" href="blank.html">
                   <img class="favorite" src="img/icon-bookmark.svg" width="14" height="16" alt="иконка закладки">
-                  <span>Закладки: 0</span>
+                  <span class="bookmark">Закладки: 0</span>
                 </a>
                 <a class="header-link" href="blank.html">
                   <img class="favorite" src="img/icon-cart.svg" width="15" height="15" alt="иконка корзины">
-                  <span>Корзина: 0</span>
+                  <span class="basket">Корзина: 0</span>
                 </a>
                 <a class="checkout-header-item" href="blank.html">Оформить заказ</a>
               </div>
@@ -90,32 +90,32 @@
                   <span class="new"></span>
                 <h3 class="material">Материалы</h3>
                 <img class="icon-materials" src="img/icon-1.svg" width="44" height="65" alt="иконка материалов">
-                <a href="blank.html" class="main-link" id="materials-link">На любой вкус</a>
+                <a href="blank.html" class="main-link">На любой вкус</a>
                 </div>
              </div>
               <article class="tool">
                 <h3 class="main-title">Инструмент</h3>
                 <img class="icon-tool" src="img/icon-2.svg" width="75" height="61" alt="иконка инструментов">
-                <a href="blank.html" class="main-link">На все случаи</a>
+                <a href="blank.html" class="main-link menu-link1">На все случаи</a>
               </article>
               <article class="technics">
                 <h3 class="main-title">Техника</h3>
                 <img class="icon-technics" src="img/icon-3.svg" width="78" height="62" alt="иконка техники">
-                <a href="blank.html" class="main-link">Для стройки</a>
+                <a href="blank.html" class="main-link menu-link2">Для стройки</a>
               </article>
             </div>
             <div class="offers-wrapper-end">
               <div class="offers-slider">
                 <div class="container-slider">
                   <ul class="slider-list">
-                    <li class="slider-item slide">
+                    <li class="slider-item slide slide-current">
                       <h2 class="slider-title">Перфораторы</h2>
                       <p class="slider-subtitle">Настоящие мужские игрушки</p>
                       <a class="slider-link" href="catalog.html">Открыть каталог</a>
                     </li>
-                    <li class="slider-item slide  slide-current">
-                      <h2 class="slider-title">Дрели</h2>
-                      <p class="slider-subtitle">Соседям на радость</p>
+                    <li class="slider-item slide">
+                      <h2 class="slider-title drill">Дрели</h2>
+                      <p class="slider-subtitle drill-sub">Соседям на радость</p>
                       <a class="slider-link" href="catalog.html">Открыть каталог</a>
                     </li>
                   </ul>
@@ -133,12 +133,12 @@
                 <article class="sale">
                   <h3 class="main-title">Скидки 50%</h3>
                   <img class="icon-sale" src="img/icon-4.svg" width="59" height="71" alt="иконка скидок">
-                  <a href="blank.html" class="main-link">На 350 товаров</a>
+                  <a href="blank.html" class="main-link menu-link3">На 350 товаров</a>
                 </article>
                 <article class="free-shipping">
                   <h3 class="main-title">Доставка</h3>
                   <img class="icon-free-shiping" src="img/icon-5.svg" width="78" height="63" alt="иконка доставки">
-                  <a href="blank.html" class="main-link">Бесплатно</a>
+                  <a href="blank.html" class="main-link menu-link4">Бесплатно</a>
                 </article>
               </div>
             </div>
@@ -146,8 +146,8 @@
         </div>
         <section class="catalog">
           <div class="products">
-            <h2 class="products-title">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-            <a class="products-button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+            <h2 class="products-title">Популярные товары:</h2>
+            <a class="products-button" href="#">Все популярные товары</a>
           </div>
           <div class="catalog-list">
             <div class="products-puncher">
@@ -195,8 +195,8 @@
         </section>
         <div class="main-manufacturers">
            <div class="main-manufacturers-partners">
-            <h2 class="partners-title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-            <a class="partners-button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+            <h2 class="partners-title">Популярные производители:</h2>
+            <a class="partners-button" href="#">Все призводители</a>
           </div>
           <div class="main-manufacturers-logo">
             <div class="manufacturers-logo"><img class="bosch" src="img/logo-bosch.jpg" width="126" height="37" alt="логотип Bosch"></div>
@@ -211,33 +211,42 @@
         </div>
         <div class="main-about-us">
           <div class="main-about-conteiner">
-            <div class="main-servise">
-              <section class="servise">
-                <h2 class="servise-title">СЕРВИСЫ</h2>
+                <h2 class="servise-title">Сервисы</h2>
                 <p class="servise-subtitle">Хороший интернет-магазин отличается от плохого не только ценами!<br>
                   Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                 </p>
-                <div class="tabs">
-                  <input class="advantages" id="delivery-tabs" type="radio" name="delivery" checked>
-                  <label class="advantages-tabs-one" for="delivery-tabs">Доставка</label>
-                  <input class="advantages" id="guarantee" type="radio" name="guarantee" checked>
-                  <label class="advantages-tabs" for="guarantee">Гарантия</label>
-                  <input class="advantages" id="credit" type="radio" name="credit" checked>
-                  <label class="advantages-tabs" for="credit">Кредит</label>
-                </div>
-              </section>
-            </div>
-            <div class="main-delivery">
-              <section class="delivery">
-                <h2 class="delivery-title">ДОСТАВКА</h2>
-                <p class="delivery-subtitle">Мы с удовольствием доставим ваш товар прямо<br>
+                 <div class="tabs">
+                  <input id="tab-1" type="radio" name="tabs" checked>
+                  <input id="tab-2" type="radio" name="tabs">
+                  <input id="tab-3" type="radio" name="tabs">
+                  <label for="tab-1">Доставка</label>
+                  <label for="tab-2">Гарантия</label>
+                  <label for="tab-3">Кредит</label>
+                <section class="section content-service1">
+                <h3 class="content-title">Доставка</h3>
+                <p class="content-subtitle">Мы с удовольствием доставим ваш товар прямо<br>
                   к вашему подъезду совершенно бесплатно!<br>
-                  Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
                 </p>
-              </section>
-            </div>
+                </section>
+                <section class="section content-service2">
+                  <h3 class="content-title">Гарантия</h3>
+                  <p class="content-subtitle">Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного<br>
+                  его возгаранием, вы всегда можете быть уверены в нашей<br>
+                  гарантии. Мы обменяем сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.</p>
+                </section>
+                <section class="section content-service3">
+                  <h3 class="content-title">Кредит</h3>
+                  <p class="content-subtitle">Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.</p>
+                  <a class="send-request" href="#">отправить заявку</a>
+                </section>
+              </div>
+               </div>
           </div>
-        </div>
         <div class="main-text">
           <div class="main-text-info">
             <section>
@@ -247,7 +256,7 @@
                 ремонта и строительства не оставит равнодушным любителей сэкономить на
                 гастарбайтерах.
               <p></p>
-              <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+              <p class="text-subtitle">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
               Техномарт работает со многими транспортными компаниями:</p>
             </div>
               <ul class="text-list">
@@ -262,26 +271,9 @@
             <section>
               <h2 class="contacts">Контакты</h2>
               <p class="text-subtitle">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-              <img class="map" src="img/map.png" width="330" height="158" alt="карта проезда">
+              <img class="map" src="img/map.png" width="300" height="158" alt="карта проезда">
               <button class="button-map" type="button">Заблудились? Напишите нам</button>
-              <div class="letter-form">
-                <form action="https://echo.htmlacademy.ru" method="post">
-                  <p class="text-subtitle">
-                    <label for="name-surname">Ваше имя:</label>
-                    <input id="name-surname" type="text" name="name" placeholder="Имя Фамилия">
-                  </p>
-                  <p class="text-subtitle">
-                    <label for="e-mail">Ваш e-mail:</label>
-                    <input id="e-mail" type="email" name="e-mail" placeholder="email@example.com">
-                  </p>
-                  <p class="text-subtitle">
-                    <label for="text">Текст письма:</label>
-                    <input id="text" type="text" name="text" placeholder="В свободной форме">
-                  </p>
-                </form>
-                <button type="button">Отправить</button>
-              </div>
-            </section>
+        </section>
           </div>
         </div>
       </main>
@@ -355,15 +347,45 @@
                     </a>
                   </li>
                 </ul>
+                <div class="design">
                 <p class="feedback">Обратная связь:<br>
                   <a class="feedback-link-yellow" href="blank.html">mail@htmlacadamy.ru</a>
                 </p>
-                <p class="feedback">Разработано:<br>
+                <p class="feedback">Разработано — <br>
                   <a class="feedback-link-yellow" href="https://htmlacademy.ru/intensive/htmlcss">HTML htmlacademy</a>
-                </p>
+                  </p>
+              </div>
               </section>
             </div>
           </div>
       </footer>
+      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+        <button class="modal-close" type="button">Закрыть</button>
+        <div class="letter-fon">
+          <div class="your-name">
+            <label class="letter-title" for="name-surname">Ваше имя:</label>
+            <input class="letter-subtitle surname" id="name-surname" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="e-mail">
+            <label class="letter-title" for="e-mail">Ваш e-mail:</label>
+            <input class="letter-subtitle mail" id="e-mail" type="email" name="e-mail" placeholder="email@example.com">
+          </div>
+          <div class="letter-text">
+            <label class="letter-title" for="text">Текст письма:</label>
+            <input class="letter-subtitle letter-text-input" id="text" type="text" name="text" placeholder="В свободной форме">
+          </div>
+        </div>
+        <div class="send">
+          <button class="btn-send" type="button">Отправить</button>
+        </div>
+    </form>
+    <script src="letter.js"></script>
+    <div class="map-show modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <img class="map popup-map" src="img/map.png" width="300" height="158" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+      <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1593612864328!5m2!1sru!2sby" width="943" height="449" title="Офис компании по адресу: г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8"></iframe>
+    </div>
+   
     </body>
     </html>
