@@ -45,7 +45,7 @@
               и инструментов для ремонта<br>
             </h2>
             <div class="header-contacts">
-             <p class="phone">+7 (812) 555-05-55</p>
+              <a href="tel:+7 (812) 555-05-55" class="phone">+7 (812) 555-05-55</a>
              <p class="address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
             </div>
             <div class="personal-account">
@@ -109,12 +109,12 @@
                     </div>
                   </div>
                   <div class="price-controls">
-                    <label class="min-price">
-                      <input class="input-price" type="number" name="min-price" value="0">
+                    <label class="min-price" for="min-price">
+                      <input class="input-price" type="number" name="min-price" value="0" id="min-price">
                     </label>
                     <span class="span-dash">—</span>
-                    <label class="max-price">
-                      <input class="input-price" type="number" name="max-price" value="30000">
+                    <label class="max-price" for="max-price">
+                      <input class="input-price" type="number" name="max-price" value="30000" id="max-price">
                     </label>
                   </div>
                 </div>
@@ -416,6 +416,6 @@
           <a class="btn purchases" href="#">продолжить покупки</a>
         </div>
       </div>
-    <script src="./js/letter.js"></script>
+    <script src="./js/script-min.js"></script>
   </body>
 </html>
