@@ -75,5 +75,3 @@ window.addEventListener("keydown", function(evt) {
         }
     }
 });
-
-/*проверка3*/
