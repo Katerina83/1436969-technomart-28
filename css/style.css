@@ -144,6 +144,7 @@ img {
 .container .header-link,
 .container .checkout-header-item {
   display: inline-block;
+  vertical-align: baseline;
   padding: 9px 16px 9px 18px;
 }
 
@@ -165,7 +166,7 @@ img {
   color: var(--basic-white);
   border: 0;
   padding-left: 30px;
-  padding: 11px 20px 8px 44px;
+  padding: 11px 20px 7px 44px;
   margin-left: -10px;
   font-size: 18px;
   line-height: 24px;
@@ -402,8 +403,8 @@ img {
   border: 3px solid var(--basic-white);
   background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
-  background-position: 24px;
-  padding: 7px 45px 5px 58px;
+  background-position: 28px;
+  padding: 7px 48px 5px 65px;
   margin-top: 0;
   margin-bottom: 2px;
   text-align: center;
