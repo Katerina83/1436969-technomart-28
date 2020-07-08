@@ -2170,6 +2170,11 @@ img {
   color: var(--basic-white);
 }
 
+.pagination-link .active {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
 .pagination-button {
   box-sizing: border-box;
   width: 140px;
